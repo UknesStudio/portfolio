@@ -248,8 +248,23 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
+        <div className="w-full bg-black overflow-hidden">
+        <div className="flex justify-between w-full">
+          {["R", "A", "Y", "A", "N", "E"].map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="text-[20vw] font-bold leading-none tracking-tighter
+                         text-transparent [-webkit-text-stroke:1px_#8b000067]"
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </div>
+      </div>
       </motion.section>
-
       <DockMenu />
     </div>
   );

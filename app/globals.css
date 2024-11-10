@@ -113,3 +113,10 @@
 #hero, #projects, #skills {
   overflow-y: hidden;
 }
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 4px #8b000067;
+    text-stroke: 4px #8b000067;
+  }
+}
