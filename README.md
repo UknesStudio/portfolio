@@ -76,18 +76,6 @@ The project uses various configuration files:
 - `tsconfig.json` - TypeScript configuration
 - `postcss.config.js` - PostCSS configuration
 
-## 🚀 Deployment
-
-This project is configured for easy deployment on Vercel:
-
-1. Push your code to GitHub
-2. Import your repository on Vercel
-3. Deploy
-
-## 📝 Environment Variables
-
-Create a `.env.local` file in the root directory:
-
 
 ## 📄 License
 
