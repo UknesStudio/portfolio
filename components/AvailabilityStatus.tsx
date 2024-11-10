@@ -9,18 +9,18 @@ interface AvailabilityStatusProps {
 const statusConfig = {
   available: {
     message: "Available for new projects",
-    color: "green",
-    pulseColor: "rgb(34 197 94)", // text-green-500
+    bgColor: "bg-green-500",
+    textColor: "text-green-400",
   },
   busy: {
     message: "Limited availability",
-    color: "yellow",
-    pulseColor: "rgb(234 179 8)", // text-yellow-500
+    bgColor: "bg-yellow-500",
+    textColor: "text-yellow-400",
   },
   unavailable: {
     message: "Currently unavailable",
-    color: "red",
-    pulseColor: "rgb(239 68 68)", // text-red-500
+    bgColor: "bg-red-500",
+    textColor: "text-red-400",
   }
 };
 
@@ -35,13 +35,12 @@ export default function AvailabilityStatus({ status }: AvailabilityStatusProps) 
       className="flex items-center gap-3 mb-6"
     >
       <div className="relative">
-        <div className={`w-2.5 h-2.5 rounded-full bg-${config.color}-500`} />
+        <div className={`w-2.5 h-2.5 rounded-full ${config.bgColor}`} />
         <div 
-          className={`absolute inset-0 rounded-full bg-${config.color}-500 animate-ping opacity-75`}
-          style={{ backgroundColor: config.pulseColor }}
+          className={`absolute inset-0 rounded-full ${config.bgColor} animate-ping opacity-75`}
         />
       </div>
-      <span className={`text-${config.color}-400 font-medium`}>
+      <span className={`font-medium ${config.textColor}`}>
         {config.message}
       </span>
     </motion.div>
