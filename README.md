@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js, Three.js, and Framer Motion. Features a dynamic 3D background, skill visualization, and responsive design.
 
-First, run the development server:
+## 🌟 Features
 
+- Interactive 3D background animations using Three.js
+- Smooth page transitions and animations with Framer Motion
+- Dynamic skill visualization with interactive orbit system
+- Responsive design for all devices
+- Custom cursor implementation
+- Dock-style navigation menu
+- Project showcase with hover effects
+- Contact form with availability status
+- Dark theme optimized
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 14
+- **Styling:** Tailwind CSS
+- **3D Graphics:** Three.js, React Three Fiber
+- **Animations:** Framer Motion, GSAP
+- **Typography:** Custom fonts (Geist Sans, Geist Mono, Arcade)
+- **Icons:** React Icons
+- **Type Checking:** TypeScript
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/UknesStudio/portfolio.git
+```
+
+2. Install dependencies:
+```bash
+cd portfolio
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio/
+├── app/                  # Next.js app directory
+├── components/          # React components
+├── public/             # Static assets
+└── styles/            # Global styles
+```
 
-## Learn More
+## 🎨 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- **Scene.tsx**: 3D background animation
+- **SkillsOrbit.tsx**: Interactive skill visualization
+- **ProjectCard.tsx**: Project showcase cards
+- **DockMenu.tsx**: macOS-style dock navigation
+- **ScrollProgress.tsx**: Page scroll progress indicator
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses various configuration files:
 
-## Deploy on Vercel
+- `next.config.js` - Next.js configuration
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration
+- `postcss.config.js` - PostCSS configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is configured for easy deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Deploy
+
+## 📝 Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👤 Author
+
+- **Rayane Makrane**
+- LinkedIn: [Rayane Makrane](https://www.linkedin.com/in/rayane-makrane-a16377293/)
+- GitHub: [@UknesStudio](https://github.com/UknesStudio)
+
+## 🙏 Acknowledgments
+
+- Three.js for 3D graphics
+- Framer Motion for animations
